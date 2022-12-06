@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        // TODO: 読み込まれたら、"Nice to meet you"と表示
     }
 
 

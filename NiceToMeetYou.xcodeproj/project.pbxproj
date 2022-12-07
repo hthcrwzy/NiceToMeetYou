@@ -13,6 +13,7 @@
 		0F554FDC293F6309004D1DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F554FDA293F6309004D1DF6 /* Main.storyboard */; };
 		0F554FDE293F630B004D1DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F554FDD293F630B004D1DF6 /* Assets.xcassets */; };
 		0F554FE1293F630B004D1DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F554FDF293F630B004D1DF6 /* LaunchScreen.storyboard */; };
+		0F554FEA293F633D004D1DF6 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 0F554FE9293F633D004D1DF6 /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0F554FDD293F630B004D1DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F554FE0293F630B004D1DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F554FE2293F630B004D1DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F554FED293F64C4004D1DF6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F554FEA293F633D004D1DF6 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 		0F554FC8293F6309004D1DF6 = {
 			isa = PBXGroup;
 			children = (
+				0F554FED293F64C4004D1DF6 /* README.md */,
 				0F554FD3293F6309004D1DF6 /* NiceToMeetYou */,
 				0F554FD2293F6309004D1DF6 /* Products */,
 			);
@@ -83,6 +87,9 @@
 			dependencies = (
 			);
 			name = NiceToMeetYou;
+			packageProductDependencies = (
+				0F554FE9293F633D004D1DF6 /* PKHUD */,
+			);
 			productName = NiceToMeetYou;
 			productReference = 0F554FD1293F6309004D1DF6 /* NiceToMeetYou.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 0F554FC8293F6309004D1DF6;
+			packageReferences = (
+				0F554FE8293F633D004D1DF6 /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = 0F554FD2293F6309004D1DF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0F554FE8293F633D004D1DF6 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0F554FE9293F633D004D1DF6 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F554FE8293F633D004D1DF6 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0F554FC9293F6309004D1DF6 /* Project object */;
 }

@@ -6,15 +6,20 @@
 //
 
 import UIKit
+import PKHUD
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        // TODO: 読み込まれたら、"Nice to meet you"と表示
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        HUD.flash(.label("Nice to meet you!"), delay: 2.0)
+    }
 
 }
 

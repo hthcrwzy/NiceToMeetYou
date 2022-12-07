@@ -2,7 +2,7 @@
 ---
 ## A new iOS application.
 
-## Future
+## Feature
 - Show "Nice to meet you!" in PKHUD.
 
 ## Development with...

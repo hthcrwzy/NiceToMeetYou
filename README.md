@@ -3,9 +3,4 @@
 ## A new iOS application.
 
 ## Feature
-- Show "Nice to meet you!" in PKHUD.
-
-## Development with...
-- Swift
-- Storyboard
-- PKHUD
+- Show "Nice to meet you!" in HUD.
